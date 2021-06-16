@@ -29,6 +29,8 @@
   z-index: 10;
   position: relative;
   font-family: "Lato", sans-serif;
+  -webkit-transition: all 50ms ease-in-out;
+  transition: all 50ms ease-in-out;
 }
 
 .navbar__logo {
@@ -186,9 +188,15 @@ body {
   font-weight: 400;
 }
 
-.sidebar-container a:hover {
+.sidebar-container a:hover,
+.sidebar-container a :active {
   cursor: pointer;
   opacity: 0.7;
+}
+
+.sidebar-container .active {
+  font-weight: 500;
+  color: #a4cafe;
 }
 
 .table-of-contents {
@@ -206,6 +214,10 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,6 +228,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 0.5rem calc((100vw - 1400px) / 2);
 }
 
 .page-content {
@@ -229,6 +242,7 @@ body {
 .page-content h2,
 .page-content h3 {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 .page-content p {
@@ -237,10 +251,13 @@ body {
 
 .page-content h1 {
   color: #a4cafe;
-  margin-bottom: 24px;
+  font-size: 2.25rem;
 }
 
 .page-content h2 {
+  color: #a4cafe;
+  margin-top: 24px;
   margin-bottom: 12px;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

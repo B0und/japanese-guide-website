@@ -17,6 +17,7 @@
   position: relative;
 
   font-family: $headings-ff;
+  transition: all 50ms ease-in-out;
 
   &__logo {
     color: $gray200;
