@@ -1,4 +1,5 @@
 @import "colors";
+@import "variables";
 @import "media_queries";
 
 %align-center {
@@ -8,75 +9,99 @@
 
 .navbar {
   background: $blue800;
-  height: 70px;
+  height: $navbar-height;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1400px) / 2);
   z-index: 10;
   position: relative;
 
-  font-family: "Lato", sans-serif;
+  font-family: $headings-ff;
 
   &__logo {
     color: $gray200;
     cursor: pointer;
     text-decoration: none;
     font-size: 1.5rem;
-    margin-left: 24px;
+    margin-left: 48px;
     @extend %align-center;
-  }
-
-  &__bars {
-    opacity: 0;
-    padding: 0.8rem;
-    border-radius: 0;
-    mask: url("../assets/menu.svg") no-repeat;
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: pointer;
-
-    @include tablet {
-      color: $gray200;
-      opacity: 1;
-      position: absolute;
-      top: 22px;
-      right: 20px;
-      font-size: 2rem;
-    }
   }
 
   &__menu {
     @extend %align-center;
-    list-style: none;
     text-align: center;
-    margin-right: 24px;
+    margin-right: 48px;
+
+    transition: all 0.3s ease-in-out;
 
     @include tablet {
       display: none;
     }
+  }
 
-    &--links {
+  &__menu--links {
+    display: block;
+    width: 100%;
+    color: $gray200;
+    @extend %align-center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+
+    &:hover {
+      color: $blue300;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    z-index: 5;
+
+    @include tablet {
       display: block;
-      width: 100%;
-      color: $gray200;
-      @extend %align-center;
-      justify-content: center;
-      text-decoration: none;
-      padding: 0 1rem;
-
-      &:hover {
-        color: $blue300;
-        transition: all 0.3s ease;
-      }
+      background-color: inherit;
+      border: none;
+      margin-right: 24px;
+      cursor: pointer;
     }
   }
 }
 
-@include tablet {
-  .show {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: $blue800;
+  z-index: 4;
+
+  a {
+    padding: 2rem 0;
   }
+}
+
+.navbar__hamburger.is-active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navbar__hamburger.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__hamburger.is-active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }

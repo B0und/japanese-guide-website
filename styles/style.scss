@@ -1,3 +1,37 @@
 @import "reset";
 @import "navbar";
+@import "sidebar";
 
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+//   flex-wrap: nowrap;
+}
+
+.page-content {
+  font-family: $text-ff;
+  color: $text-clr;
+
+  max-width: 70ch;
+  margin: 36px 4rem;
+
+  h1,
+  h2,
+  h3 {
+    font-family: $headings-ff;
+  }
+
+  p {
+    line-height: 1.9;
+  }
+
+  h1 {
+    color: $blue300;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    margin-bottom: 12px;
+  }
+}

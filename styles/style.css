@@ -36,35 +36,14 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
-  margin-left: 24px;
-}
-
-.navbar__bars {
-  opacity: 0;
-  padding: 0.8rem;
-  border-radius: 0;
-  -webkit-mask: url("../assets/menu.svg") no-repeat;
-          mask: url("../assets/menu.svg") no-repeat;
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar__bars {
-    color: #e5e7eb;
-    opacity: 1;
-    position: absolute;
-    top: 22px;
-    right: 20px;
-    font-size: 2rem;
-  }
+  margin-left: 48px;
 }
 
 .navbar__menu {
-  list-style: none;
   text-align: center;
-  margin-right: 24px;
+  margin-right: 48px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -90,17 +69,178 @@
   transition: all 0.3s ease;
 }
 
+.navbar__hamburger {
+  display: none;
+  z-index: 5;
+}
+
 @media screen and (max-width: 768px) {
-  .show {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
+  .navbar__hamburger {
+    display: block;
+    background-color: inherit;
+    border: none;
+    margin-right: 24px;
+    cursor: pointer;
   }
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #1e429f;
+  z-index: 4;
+}
+
+.mobile-nav a {
+  padding: 2rem 0;
+}
+
+.navbar__hamburger.is-active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+
+.navbar__hamburger.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__hamburger.is-active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
+}
+
+body {
+  background-color: #2f2f2f;
+}
+
+.sidebar {
+  height: 100%;
+  width: 20vw;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: inherit;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  margin-left: 48px;
+  margin-top: 48px;
+  margin-right: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+.sidebar-container h2 {
+  font-size: 1.125rem;
+  color: #cacaca;
+  font-weight: 600;
+}
+
+.sidebar-container a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #afafaf;
+  font-weight: 400;
+}
+
+.sidebar-container a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.table-of-contents {
+  left: initial;
+  top: 0;
+  right: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 290px;
+          flex: 0 0 290px;
+}
+
+@media screen and (max-width: 768px) {
+  .table-of-contents {
+    display: none;
+  }
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.page-content {
+  font-family: "Roboto", sans-serif;
+  color: #d2d2d2;
+  max-width: 70ch;
+  margin: 36px 4rem;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3 {
+  font-family: "Lato", sans-serif;
+}
+
+.page-content p {
+  line-height: 1.9;
+}
+
+.page-content h1 {
+  color: #a4cafe;
+  margin-bottom: 24px;
+}
+
+.page-content h2 {
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+@import "colors";
+@import "variables";
+@import "media_queries";
+
+body {
+  background-color: $bg-dark;
+}
+.sidebar {
+  height: 100%;
+  width: 20vw;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: inherit;
+  font-family: $headings-ff;
+
+  // white-space: nowrap;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-left: 48px;
+  margin-top: 48px;
+  margin-right: 48px;
+
+  @include tablet {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    color: $sidebar-heading;
+    font-weight: 600;
+  }
+
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: $sidebar-text;
+    font-weight: 400;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+}
+
+.table-of-contents {
+  left: initial;
+  top: 0;
+  right: 0;
+  flex: 0 0 290px;
+
+  @include tablet {
+    display: none;
+  }
+}
