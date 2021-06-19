@@ -34,7 +34,8 @@ body {
   h2 {
     font-size: 1.125rem;
     color: $sidebar-heading;
-    font-weight: 600;
+    color: $blue200;
+    font-weight: 500;
   }
 
   a {
@@ -51,7 +52,7 @@ body {
   }
   .active {
     font-weight: 500;
-    color: $blue300;
+    color: $blue-highlight;
   }
 }
 

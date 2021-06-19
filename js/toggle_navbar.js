@@ -1,8 +1,10 @@
-// delegate event from footer to child element, because it was loaded with .load and the code above doesnt work in this case
-// https://api.jquery.com/on/#direct-and-delegated-events
-$(function () {
-  $(".navbar").on("click", ".navbar__hamburger", function () {
-    $(".navbar__menu").toggleClass("mobile-nav");
-    $(this).toggleClass("is-active");
-  });
-});
+var hamburger = document.querySelector(".navbar__hamburger");
+var menu = document.querySelector(".navbar__menu");
+hamburger.addEventListener(
+  "click",
+  function (e) {
+    menu.classList.toggle("mobile-nav");
+    hamburger.classList.toggle("is-active");
+  },
+  false
+);

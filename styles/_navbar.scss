@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  background: $blue800;
+  background: $bg-dark;
   height: $navbar-height;
   display: flex;
   justify-content: space-between;
@@ -48,9 +48,15 @@
     justify-content: center;
     text-decoration: none;
     padding: 0 1rem;
+    padding-bottom: 0.5rem;
 
-    &:hover {
-      color: $blue300;
+    &.active-page {
+      border-bottom: 2px solid $blue-highlight;
+    }
+
+    &:hover,
+    :active {
+      color: $blue-highlight;
       transition: all 0.3s ease;
     }
   }
@@ -58,6 +64,10 @@
   &__hamburger {
     display: none;
     z-index: 5;
+
+    &:hover {
+      color: $blue-highlight;
+    }
 
     @include tablet {
       display: block;
@@ -68,6 +78,10 @@
     }
   }
 }
+
+// .navbar__menu--links.active-page{
+//   border-bottom: 5px solid red;
+// }
 
 .bar {
   display: block;
@@ -88,12 +102,16 @@
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
-  background-color: $blue800;
+  background-color: $bg-lighter;
   z-index: 4;
 
   a {
     padding: 2rem 0;
   }
+}
+
+.navbar__hamburger.is-active {
+  background-color: $bg-lighter;
 }
 
 .navbar__hamburger.is-active .bar:nth-child(1) {
