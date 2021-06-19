@@ -231,6 +231,10 @@ body {
   }
 }
 
+.sub-item {
+  margin-left: 0.7em;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -366,5 +370,7 @@ img {
   font-size: 1.125rem;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+  color: #c7c7c7;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
