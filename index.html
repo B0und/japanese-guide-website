@@ -12,10 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar Section -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar hero-nav" id="navbar">
       <a href="/" class="navbar__logo">Jo-Mako`s Japanese Guide</a>
       <button class="navbar__hamburger" type="button">
         <span class="bar"></span>
@@ -30,6 +34,36 @@
         <a href="/" class="navbar__menu--links">Updates</a>
       </div>
     </nav>
+    <!-- Hero section -->
+    <div class="hero-section">
+      <div class="hero-wrapper">
+        <h1>
+          Hi! <br />
+          I`m <span>Jo-Mako</span>
+        </h1>
+        <p>
+          I present to you a comprehensive tutorial on different methods to
+          learn Japanese and provide you with resources to achieve your goals.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-secondary"
+            onclick="location.href='gallery.html'"
+            type="button"
+          >
+            Learn More
+          </button>
+
+          <button
+            class="btn btn-primary"
+            onclick="location.href='contact.html'"
+            type="button"
+          >
+            Read Japanese Guide
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- Footer section -->
     <footer class="footer" id="footer"></footer>
     <script src="js/highlight_active_page.js"></script>

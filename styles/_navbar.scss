@@ -52,6 +52,7 @@
 
     &.active-page {
       border-bottom: 2px solid $blue-highlight;
+      margin-bottom: -2px;
     }
 
     &:hover,
