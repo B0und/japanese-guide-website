@@ -10,5 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       link.classList.remove("active-page");
     }
+    if (!$page.endsWith(".html")) {
+      matches[0].classList.add("active-page");
+    }
   });
 });
