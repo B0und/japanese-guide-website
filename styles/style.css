@@ -92,7 +92,7 @@
 @media screen and (max-width: 768px) {
   .navbar__hamburger {
     display: block;
-    background-color: inherit;
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     margin-right: 24px;
     cursor: pointer;
@@ -347,7 +347,7 @@ span.note {
 }
 
 .hero-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -371,7 +371,7 @@ span.note {
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 50%;
-  color: white;
+  color: #eeeeee;
 }
 
 button {
@@ -408,7 +408,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-size: clamp(1rem, 3vw, 1.25rem);
   color: #b6b6b6;
-  color: #fafafa;
+  color: #cacaca;
 }
 
 .hero-wrapper .btn-container {
@@ -425,7 +425,6 @@ button {
   padding: 1.5rem 3rem;
   border-radius: 10px;
   font-size: clamp(1rem, 3vw, 1.2rem);
-  color: white;
   white-space: nowrap;
   -webkit-box-shadow: 3px 4px 3px rgba(255, 255, 255, 0.1);
           box-shadow: 3px 4px 3px rgba(255, 255, 255, 0.1);
@@ -435,9 +434,15 @@ button {
   transition: all 0.15s ease;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-wrapper .btn {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
 .hero-wrapper .btn-secondary {
   background-color: #3b3b3b;
-  color: #ebebeb;
+  color: #cfcfcf;
 }
 
 .hero-wrapper .btn-secondary:hover {
@@ -453,6 +458,120 @@ button {
 .hero-wrapper .btn-primary:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
+}
+
+.method-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  color: white;
+  padding: 0.5rem calc((100vw - 1040px) / 2);
+  margin-bottom: 4rem;
+}
+
+.method-section h2 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: clamp(2rem, 9vw, 4rem);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .method-section h2 {
+    margin-bottom: 0px;
+  }
+}
+
+.method-section span {
+  color: #13a7ff;
+}
+
+.method-section img {
+  display: block;
+  max-width: 450px;
+  min-width: 125px;
+  max-height: 250px;
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+
+.method-container {
+  width: 100%;
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .method-container {
+    margin: 2.5rem auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .method-container {
+    gap: 2.5rem;
+  }
+}
+
+.method-container__text p {
+  font-family: "Roboto", sans-serif;
+  max-width: 35ch;
+  line-height: 1.7;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: #bdbdbd;
+}
+
+.method-container__text h2 {
+  text-align: left;
+  font-size: clamp(2.1rem, 3vw, 3rem);
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .method-container__text h2 {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.last-item {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .last-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 html {

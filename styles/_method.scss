@@ -1,0 +1,85 @@
+.method-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  color: white;
+
+  padding: 0.5rem calc((100vw - 1040px) / 2);
+
+  margin-bottom: 4rem;
+
+  h2 {
+    font-family: $headings-ff;
+    text-align: center;
+    font-size: clamp(2rem, 9vw, 4rem);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+
+    @include tablet {
+      // margin-top: 4rem;
+      margin-bottom: 0px;
+    }
+  }
+  span {
+    color: $blue-highlight;
+  }
+
+  img {
+    display: block;
+    max-width: 450px;
+    min-width: 125px;
+    max-height: 250px;
+    background-size: cover;
+    width: auto;
+    height: auto;
+  }
+}
+
+.method-container {
+  width: 100%;
+  margin: 5rem auto;
+
+  @include tablet {
+    margin: 2.5rem auto;
+  }
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+
+  @include tablet {
+    gap: 2.5rem;
+  }
+
+  &__text p {
+    font-family: $text-ff;
+    max-width: 35ch;
+    line-height: 1.7;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    color: rgb(189, 189, 189);
+  }
+
+  &__text h2 {
+    text-align: left;
+    font-size: clamp(2.1rem, 3vw, 3rem);
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-weight: 300;
+
+    @include tablet {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+.last-item {
+  justify-content: flex-end;
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+}
