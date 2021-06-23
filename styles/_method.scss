@@ -1,13 +1,13 @@
 .method-section {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
-  width: 100%;
-  color: white;
+  color: rgb(241, 241, 241);
+  background-color: $method-bg;
 
   padding: 0.5rem calc((100vw - 1040px) / 2);
+  // margin: 0 4rem;
 
-  margin-bottom: 4rem;
+  // margin-bottom: 4rem;
 
   h2 {
     font-family: $headings-ff;
@@ -29,7 +29,7 @@
   img {
     display: block;
     max-width: 450px;
-    min-width: 125px;
+    min-width: 100px;
     max-height: 250px;
     background-size: cover;
     width: auto;
@@ -69,7 +69,7 @@
     font-size: clamp(2.1rem, 3vw, 3rem);
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-weight: 300;
+    font-weight: 400;
 
     @include tablet {
       margin-bottom: 1.25rem;
@@ -79,6 +79,7 @@
 
 .last-item {
   justify-content: flex-end;
+  margin-bottom: 8rem;
   @include tablet {
     flex-direction: column-reverse;
   }

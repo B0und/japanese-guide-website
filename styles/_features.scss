@@ -1,0 +1,94 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  color: rgb(241, 241, 241);
+  background-color: $features-bg;
+
+  //   padding: 0.5rem calc((100vw - 1400px) / 2);
+
+  h2 {
+    font-family: $headings-ff;
+    font-size: clamp(2rem, 9vw, 3.5rem);
+    margin-top: 5rem;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+}
+
+.features-container {
+  align-self: center;
+  //   width: 65%;
+  max-width: MIN(90%, 1200px);
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, MINMAX(250px, 1fr));
+  justify-items: center;
+  gap: 6rem;
+  row-gap: 4rem;
+
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.card {
+  //   display: block;
+  position: relative;
+  //   min-width: 21rem;
+  //   max-width: 21rem;
+  transition: all 0.25s ease-in-out;
+
+  h3 {
+    font-family: $headings-ff;
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+
+  }
+  p {
+    font-family: $text-ff;
+    font-size: 1.3rem;
+    color: #bababa;
+    // min-width: 40ch;
+  }
+}
+
+@mixin text-icon($icon-url) {
+  content: $icon-url;
+  display: inline-block;
+  vertical-align: middle;
+
+  //   css is a hack. chaning svg color with filter
+  //   https://codepen.io/sosuke/pen/Pjoqqp
+  filter: invert(61%) sepia(46%) saturate(6173%) hue-rotate(179deg)
+    brightness(105%) contrast(101%);
+  margin-right: 0.8em;
+}
+
+#word-count::before {
+  @include text-icon($icon-url: url("../assets/hero/fact_check_black.svg"));
+}
+
+#understanding::before {
+  @include text-icon($icon-url: url("../assets/hero/language_black.svg"));
+}
+
+#morphman::before {
+  @include text-icon($icon-url: url("../assets/hero/track_changes_black.svg"));
+}
+
+#comprehension::before {
+  @include text-icon($icon-url: url("../assets/hero/next_week_black.svg"));
+}
+
+#filtering::before {
+  @include text-icon($icon-url: url("../assets/hero/filter_alt_black.svg"));
+}
+
+#study-plan::before {
+  @include text-icon($icon-url: url("../assets/hero/school_black.svg"));
+}
