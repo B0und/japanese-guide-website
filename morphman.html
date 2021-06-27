@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jo-Mako Website</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar" id="navbar">
+      <a href="/" class="navbar__logo">Jo-Mako`s Japanese Guide</a>
+      <button class="navbar__hamburger" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="navbar__menu">
+        <a href="index.html" class="navbar__menu--links">Home</a>
+        <a href="introduction.html" class="navbar__menu--links">Guide</a>
+        <a href="resources.html" class="navbar__menu--links">Resources</a>
+        <a href="updates/progress4.html" class="navbar__menu--links">Updates</a>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <!-- Left sidebar section -->
+      <nav class="sidebar">
+        <div class="sidebar-container">
+          <h2>Guide</h2>
+          <a class="sidebar-container__links" href="introduction.html">Introduction</a>
+          <a class="sidebar-container__links" href="kana.html">Kana</a>
+          <a class="sidebar-container__links" href="kanji.html">Kanji</a>
+          <a class="sidebar-container__links" href="anki.html">Anki</a>
+          <a class="sidebar-container__links sub-item" href="anki-in-depth.html">Anki In-Depth</a>
+          <a class="sidebar-container__links sub-item" href="anki-addons.html">Anki Addons</a>
+          <a class="sidebar-container__links" href="grammar.html">Grammar</a>
+          <a class="sidebar-container__links" href="vocabulary.html">Vocabulary</a>
+          <a class="sidebar-container__links" href="morphman.html">Morphman</a>
+          <a class="sidebar-container__links sub-item" href="morphman-study.html">Study with Morphman</a>
+          <a class="sidebar-container__links sub-item" href="morphman_anime_difficulty.html">Anime Difficulty</a>
+          <a class="sidebar-container__links sub-item" href="morphman_readability.html">Readability List</a>
+          <a class="sidebar-container__links" href="immersion.html">Immersion</a>
+        </div>
+      </nav>
+
+      <div class="page-content">
+        <section id="introduction">
+          <h1>Morphman</h1>
+          <h2>Introduction</h2>
+          <p>
+            I wouldn`t say that Morphman is essential to your studies, but if you already use Anki you might consider
+            using Morphman. It might seem scary at first, but I can help you set it up in 5 minutes, if you follow this
+            guide.
+            <br />
+            <!-- line break -->
+            Here's a recap of all the cool things you can do with it:
+          </p>
+          <ul>
+            <li>At any point during your studies you know exactly how many words you`ve learned.</li>
+            <li>
+              You know the exact percentage of a title you understand, helping you find something with the right
+              difficulty for you.
+            </li>
+            <li>You can set the exact comprehension percentage of some material for your next study.</li>
+            <li>
+              You know the amount of words you need to learn, to reach your next goal, and Morphman will prioritize them
+              automatically.
+            </li>
+            <li>
+              You can filter those words by a master frequency list, making sure you still focus on the most frequent
+              words in japanese, and not just the words used in a certain show.
+            </li>
+          </ul>
+        </section>
+
+        <section id="get-the-files">
+          <h2>Get the neccesary files</h2>
+
+          <ol>
+            <li>Go to Anki</li>
+            <li><i> Tools -> Add-ons -> Get Add-ons </i></li>
+            <li>Type or paste the numbers below:</li>
+            <ul>
+              <li><b>Morphman</b> : 900801631</li>
+              <li><b>Mecab</b>: 13462835</li>
+            </ul>
+          </ol>
+
+          <img src="assets/morphman/morphman1.jpg" loading="lazy" alt="" />
+          <p>
+            Close Anki, and reopen it, the add-ons are now installed. In the add-on window select "MeCab ..." and click
+            on <i> View Files</i>
+          </p>
+
+          <img src="assets/morphman/morphman2.jpg" loading="lazy" alt="" />
+
+          <p>
+            Mecab is used to help Morphman analyze the sentences with better accuracy. There's a
+            <b> Mecab update</b> that you can get
+            <a target="_blank" href="https://mega.nz/file/oWpzCBDZ#A433rxxf5cO0znap25tnGh9iQa4HrdRfqL5HaKjVwSI">here</a
+            >.
+          </p>
+          <br />
+          <p>
+            Drag and drop all the files in update archive to your Mecab folder (named 13462835), replace all the files
+            when asked to.
+          </p>
+
+          <ul>
+            <li>
+              Download all the files from my <b> Readability List</b>
+              <a target="_blank" href="https://www.mediafire.com/file/hubbdue2fqhaujr/Readability_List.rar/file">here</a
+              >. We'll go over them on the next page, but at least you have everything ready.
+            </li>
+            <li>
+              Download any deck that you want to study. It can be anime, manga, video games, your own deck. Decks that I
+              made can be found
+              <a
+                href="https://docs.google.com/spreadsheets/d/1ukDIWSkh_xvpppPbgs1nUR2kaEwFaWlsJgZUlb9LuTs/edit#gid=822742203"
+                target="_blank"
+                >here</a
+              >.
+            </li>
+          </ul>
+          <p>For this tutorial, I'm going to use two decks:</p>
+          <ul>
+            <li>
+              the
+              <a href="https://ankiweb.net/shared/info/493795566" target="_blank" rel="noopener noreferrer"
+                >Core Anime Deck</a
+              >
+            </li>
+            <li>
+              and the Deck for
+              <a href="https://ankiweb.net/shared/info/1988124792" target="_blank" rel="noopener noreferrer">
+                "A Silent Voice".</a
+              >
+            </li>
+          </ul>
+          <p>Again, close Anki and reopen it for Mecab to be updated.</p>
+        </section>
+
+        <section id="what-morphman-needs">
+          <h2>What morphman needs</h2>
+          <p>Morphman can build a database of words you know, but to do this you need to specify where they are.</p>
+          <br />
+          <p>
+            Morphman doesn't analyze decks, it analyzes <b> fields</b>. So you need to know which field to look at,
+            because analyzing a field where you have some english text won't do anything. You want to analyze the field
+            with the japanese sentence or word that you've learned. You just need to know which <b>note type</b> that
+            field is.
+          </p>
+          <p>
+            If you're unsure about note style, field, cards and all that, go back to the
+            <a href="" target="_blank">Anki tutorial</a>.
+          </p>
+          <span class="note"
+            >Note: Morphman is for words, not Kanji. You can't use it on a Kanji deck, simply because single kanji are
+            not words.</span
+          >
+
+          <p>
+            For Morphman to work, you need to tell it which cards to analyze. For this, you need to know the
+            <b> note type</b> of the card. But Morphman doesn't analyze the whole card, only a field so you also need to
+            know which field of that note type to analyze. Basically, where you have the sentence or word in japanese.
+          </p>
+          <br />
+          <p>
+            You can analyze more than one note type, which we'll do in this tutorial, but each time you just need to
+            need to know 2 things:
+          </p>
+          <ul>
+            <li>Your note type</li>
+            <li>The name of the field you want to analyze</li>
+          </ul>
+          <p>If you want to only analyze your cards, that's all you need to know.</p>
+          <p>
+            If you wish to modify your cards, so they can be reorganized in
+            <b> +1 order </b>, you need to have <b> a field </b> where Morphman will put the word you don't know.
+          </p>
+          <p>
+            Morphman preferences depend on the name of
+            <b> YOUR NOTE STYLE </b> and <b> YOUR FIELDS </b>, so don't copy my settings exactly.
+          </p>
+        </section>
+
+        <section id="which-note-type">
+          <h2>Which note type?</h2>
+          <p>
+            Go to the browser mode <kbd>B</kbd>. You can see the list of your note types on the left, and if you click
+            on it, you'll see which notes are in there.
+          </p>
+          <p>
+            Now, let's say that I have just finished the Core Anime Deck, and I want Morphman to tell me how many words
+            I already know. In this case the note type I'll use is "Japanese Core Anime Vocabulary".
+          </p>
+          <p>
+            You can also go directly to manage note type
+            <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>, and to check the name of the note type you're using.
+          </p>
+        </section>
+
+        <section id="which-field-to-analyze">
+          <h2>Which field to analyze?</h2>
+          <p>In this case, my sentence is in the field called "Expression".</p>
+          <p>
+            That's for this note type only. For the other note types, the field that you want to analyze could be named
+            Front, Word, Morph, etc.
+          </p>
+          <p>
+            Just click on the name of the field and copy it, so you know there won't be a spelling mistake when you have
+            to write it.
+          </p>
+          <img src="assets/morphman/morphman3.jpg" loading="lazy" alt="" />
+          <img src="assets/morphman/morphman4.jpg" loading="lazy" alt="" />
+          <img src="assets/morphman/morphman5.jpg" loading="lazy" alt="" />
+        </section>
+
+        <section id="configure-morphman">
+          <h2>Configure Morphman</h2>
+          <p>Press <kbd>Ctrl</kbd> + <kbd>O</kbd> to open the settings window.</p>
+        </section>
+        <section id="note-filter">
+          <h2>Note filter</h2>
+          <ul>
+            <li>Note Type: Pick your note type from the list. In my case, it's "Japanese Core Anime Vocabulary".</li>
+            <li>
+              If you want Morphman to only use some specific cards from that note type, tag those cards, and put the
+              name of that tag in that column.
+            </li>
+            <li>
+              Put the name of the field you want to analyze. <b>No typos</b>, that's why I said you could copy from the
+              browser. Paste or write it here. Mine is "Expression".
+            </li>
+            <li>Pick "Japanese Mecab ..." as your Morphemizer. We didn't download it for nothing.</li>
+            <li>
+              Check the Read box, if you want Morphman to collect data only from the cards, to build a database of your
+              knowledge. That's what we want to use Morphman for afterall.
+            </li>
+            <li>
+              Check the Modify Box if you want Morphman to reorganize your cards in +1 order. I didn`t check it here,
+              because The Core Anime deck is already in +1 order, Morphman will mess around with the cards and we don't
+              want that for this deck. If you're using the tango decks, you probably don't need to change the card order
+              either. We'll do it with the deck for A Silent Voice below.
+            </li>
+            <li>Click apply</li>
+            <img src="assets/morphman/morphman6.jpg" loading="lazy" alt="" />
+            <p>
+              Now, the only thing you have to do is recalc
+              <kbd>Ctrl</kbd>+<kbd>M</kbd>
+              your database. You'll see the number of your known words change at the top of Anki.
+            </p>
+            <img src="assets/morphman/morphman7.jpg" loading="lazy" alt="" />
+            <span class="note">
+              Note that the deck or mecab may change between the moment I write this tutorial and the time you do it, so
+              the numbers may be different.
+            </span>
+            <p>Morphman counts words in two ways:</p>
+            <ul>
+              <li>K: Number of Known words (Ex ね and ねぇ count as 1 word)</li>
+              <li>V: Number of Known words - with iterations (Ex ね and ねぇ count as 2 words)</li>
+            </ul>
+            <p>Now, that I know how many words I know, I want to keep studying with the Deck for A Silent Voice.</p>
+            <p>
+              Morphman can analyze more than one field at a time, so we`ll do just that. The process is the same, you
+              need to know the field and the note type to analyze.
+            </p>
+            <p>
+              When you, go back to Morphman's option <kbd>Ctrl</kbd>+<kbd>O</kbd>
+              and click on Clone to add another line.
+            </p>
+            <img src="assets/morphman/morphman8.jpg" loading="lazy" alt="" />
+            <p>
+              The deck for A Silent Voice is in chronological order. To change the order, this time you need to check
+              the modify box. So, you'll be able see the sentences with only one unkown word, they are called i+1.
+            </p>
+            <p>
+              We'll see in the next section of the tutorial how to be more precise with the order by using frequency
+              lists.
+            </p>
+            <p>
+              Let's check out the rest of the options because we need them in order to modify the order of the cards.
+            </p>
+          </ul>
+        </section>
+
+        <section id="extra-fields">
+          <h2>Extra Fields</h2>
+          <p>
+            I just said that Morphman can reorder any deck in a +1 manner, but to do that you need to have a field where
+            that +1 word (the word that you don't know) is going to go.
+          </p>
+          <span class="note">
+            This is required for every note type where you have checked the
+            <b> modify box.</b>
+          </span>
+          <p>
+            In addition to that field, you can also create more fields where Morphman will automatically write some
+            data. It's optional.
+          </p>
+          <p>
+            You need to tell Morphman in which field the information is going to go by simply writing it in the boxes.
+          </p>
+          <ul>
+            <li>
+              Focus morph (*). This is where the unknown word of your sentence goes. (By default, it's focus, I named my
+              field "Morph", so that's what I'm putting this here).
+            </li>
+            <li>
+              Index is basically Morphman's order, the higher the score, the sooner you'll see the card, but you have
+              the due column for that anyway.
+            </li>
+            <li>
+              The next 4 columns tell you how many unknown words there are in your note and what they are. The unmatures
+              are the words you have seen but don't know very well yet.
+            </li>
+            <li>
+              Unknown frequency can be useful. It tells you how many times in your collection the "Morph" word appears.
+              When I say in your collection, it only applies to the decks you analyze with Morphman. This number has
+              nothing to do with the outside frequency files, it only applies to your present database in Anki.
+            </li>
+            <li>
+              Focus morph POS, I found it useful when making my core2k deck. It tells you the grammatical nature of your
+              "Morph". Same Morph can have differents ones, this specifies which one you're studying. Problem is that
+              it's written in Japanese.
+            </li>
+          </ul>
+          <img src="assets/morphman/morphman9.jpg" loading="lazy" alt="" />
+          <p>
+            If you want to add a field to your note type, you can go to Manage Note Types
+            <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>.
+          </p>
+          <p>Pick the note type you want, click on <i>Fields...</i>, and then <i>Add</i>.</p>
+          <p>Name your field. You can put the same name in the Extra Fields tab in Morphman's options.</p>
+          <img src="assets/morphman/morphman10.jpg" loading="lazy" alt="" />
+          <img src="assets/morphman/morphman11.jpg" loading="lazy" alt="" />
+        </section>
+
+        <section id="tags">
+          <h2 id="tags">Tags</h2>
+          <p>
+            This not necessary but really useful to know which cards to use, so may want to check the box to add those
+            tags.
+          </p>
+          <ul>
+            <li>Vocab note, is what you want, only 1 new word in the sentence. I called it 1T.</li>
+            <li>
+              Fresh and comprehension mean that you've seen all the words in that sentence. So the 1T note became 0T,
+              meaning 0 unknown word. Comprehension means that one new word has matured, fresh means it hasn't yet, you
+              saw it for the first time recently.
+            </li>
+            <li>
+              Not ready is for sentences that have more that 1 unkown word in the sentence. So 2T or more if you will.
+            </li>
+            <li>
+              <b>Already known</b> is very useful if you studied with Anki before using Morphman. You can use those tag
+              to tell Morphman you already know those cards without reviewing the cards first. The tag by itself is not
+              enough, make sure the note types and fields of the cards you tag are analyzed by morphman in the Note
+              Filter.
+            </li>
+            <li>
+              You prioritize your words if you have a priority database. It's not really useful, Frequency works better.
+            </li>
+            <li>
+              Too Short and Too Long is important, you can use those tags to know if the sentence of your note is ...
+              you guessed it: too long or too short. See below.
+            </li>
+            <li>
+              Frequency is also useful, it will tell you if the morph on your 1T card is included in your frequency
+              file. See next page for frequency.
+            </li>
+            <img src="assets/morphman/morphman12.jpg" loading="lazy" alt="" />
+          </ul>
+        </section>
+
+        <section id="general">
+          <h2>General</h2>
+          <p>
+            Let's get pratical and win some time with our studies. The example below is if I haven`t learned anything
+            before using the
+            <b> "A Silent Voice" </b> deck.
+          </p>
+
+          <p>
+            For this screeshot, I use the
+            <a href="https://ankiweb.net/shared/info/874215009" target="_blank">advanced browser add-on</a>
+            to see more columns in the browser and created the<i> UnknownFreq</i>
+            field in the note type (see
+            <a href="#extra-fields">Extra Fields</a> above).
+          </p>
+          <p>Couple of observations:</p>
+          <ul>
+            <li>
+              Cards are organized by Due Date here. Without using a frequency list, Morphman will order words by
+              frequency of appearence in your collection. In this case, this means 何 appears 93 times in "A Silent
+              Voice", な appears 75 times and so on.
+            </li>
+            <li>
+              I don't have 0T cards as I don't know anything. So 1T cards are first. More than 1T cards are at the
+              bottom, because you're not ready to learn them.
+            </li>
+            <li>
+              You can see that the sentences are just one word. (Expression column). Some sentences are longer but they
+              are names put in brackets.
+            </li>
+            <li>
+              Those cards should be tags are <i>mm_tooShort</i>, but I changed the options to show you this ones first.
+            </li>
+            <img src="assets/morphman/morphman13.jpg" loading="lazy" alt="" />
+            <li>Now, my first card should be "A_KoenoKatachi_0570" where I'd learn 何.</li>
+            <li>
+              I pass the card. The next one should be "A_KoenoKatachi_1037". But it's the same morph : 何. So maybe I
+              don't want to lose time to see that card because, I`ve already picked a card I'm gonna use it to learn
+              that word.
+            </li>
+            <li>
+              So if I want to move on to learn な and change my second card instead to be A_KoenoKatachi_1031, use this
+              option:
+            </li>
+            <img src="assets/morphman/morphman14.jpg" loading="lazy" alt="" />
+          </ul>
+          <p>
+            Maybe you didn't see this morph today, but you still don't want to learn additional 0T for 何 cards when you
+            already have one designated for that, you can check the first two boxes as well. The difference is wether or
+            not 何 would be consider as Fresh or Mature morph.
+          </p>
+          <img src="assets/morphman/morphman15.jpg" loading="lazy" alt="" />
+          <ul>
+            <li>
+              Include all missing morphemes, will add morphemes to your frequency list that weren't included because of
+              your study plan settings. See next section for that.
+            </li>
+            <li>You can choose to ignore morphemes that are categorized as grammar points.</li>
+            <li>
+              You can ignore what's in the brackets in your sentences. So if it's a word you don't know but it's in the
+              brackets, Morphman won't count that word as a Morph. This option may unlock cards as 1T if names are in
+              the brackets like in the last 3 sentences in my example above. If you are using add-ons like Migaku for
+              pitch accent or analyzing a field where you have furigana, you may want to check the brackets options.
+            </li>
+            <li>
+              In case some names are not in the brackets, you can set proper nouns as known. So you won't have to learn
+              names of characters of towns.
+            </li>
+            <li>
+              Do you remember that if you fail the cards too many times, they will become leeches? You can ignore those
+              cards as well.
+            </li>
+          </ul>
+          <p>Click <i>Apply</i> and you are done here.</p>
+          <img src="assets/morphman/morphman16.jpg" loading="lazy" alt="" />
+
+          <h2 id="morphman-config-py">Morphman's config.py</h2>
+          <p>
+            There's one last thing to configure. Go to your add-ons window, select Morphman, and click on View files.
+            That takes you the Morphman add-on directory.
+          </p>
+          <p>Open the "Morph folder" and open<i> config.py </i> with any notepad.</p>
+          <img src="assets/morphman/morphman17.jpg" loading="lazy" alt="" />
+          <img src="assets/morphman/morphman18.jpg" loading="lazy" alt="" />
+          <img src="assets/morphman/morphman19.jpg" loading="lazy" alt="" />
+
+          <h3>Comprehension and fresh</h3>
+          <p>
+            So those comprehension and fresh morph we mentioned above, you can say to Morphman which ones they are, and
+            how long it takes for a fresh morph (known) to become a comprehension (mature) morph. You should leave those
+            settings by default anyway, since it's recommended to skip those extra cards.
+          </p>
+          <img src="assets/morphman/morphman20.jpg" loading="lazy" alt="" />
+
+          <h3>Pick cards with a good sentence length</h3>
+          <p>We all know that length matters, especially when you have to study japanese sentences.</p>
+          <p>
+            You can set the threshold for what is too short or too long. If the sentence doesn't fit it will get some
+            minus points and will not be prioritizez, but they won't get suspended or anything. Morphman will just
+            prioritize cards with proper length.
+          </p>
+          <p>
+            Some prefer longer sentences to practice their listening skills since sentences in immersion are usually
+            quite long. I like shorter sentences, because it makes it easier to recognize the morph that I don't know,
+            and memorize it. It also makes the reviews faster.
+          </p>
+          <p>
+            Find a balance that works for you. The numbers here apply to the number of Morphs (words) not characters.
+          </p>
+          <img src="assets/morphman/morphman21.jpg" loading="lazy" alt="" />
+
+          <h3>Prioritize words on your frequency list</h3>
+          <p>
+            We'll learn about frequency list in the next section. You need to use it, if you want to prioritize learning
+            words in that file.
+          </p>
+          <p>So make sure the number here is high enough so that they are prioritized higher in your queue list.</p>
+          <span class="note">
+            <p># Maximum bonus a card can get by its position in frequency.txt.</p>
+
+            <p># A card with an unknown morph that matches the first word in frequency.txt will get all this bonus.</p>
+            <p>
+              # A card with an unkown morph that matches some of the last words in frequency.txt will get almost no
+              bonus
+            </p>
+            <p>'frequency.txt bonus' : 100000,</p>
+          </span>
+        </section>
+
+        <section id="morphman-for-reviews">
+          <h2>Morphman for reviews</h2>
+        </section>
+
+        <section id="right-settings">
+          <h3 id="right-settings">Pick the right settings</h3>
+          <p>
+            Maybe you'll change your setttings once in a while, that's okay, I did too, before I found the ones that
+            worked for me.
+          </p>
+          <p>
+            I use Anki just to be reminded of the vocab I know and keep it fresh in my head, but the real studying or
+            practice takes place during immersion. It's by watching an anime, or most likely playing jrpgs that I really
+            see my progress, or when I'm reading, and I don't need to check the definition of a word because I saw the
+            card not too long ago. So I make sure I spend as little time as possible doing reviews to make them
+            efficient. Short length, good cards to memorize, skip all the redundant 0T out of the process, disregard
+            proper nouns and words in brackets.
+          </p>
+          <p>But that's just me. As always, figure out what works best for you.</p>
+        </section>
+
+        <section id="right-card">
+          <h3>Pick the right card</h3>
+          <p>
+            Unless you make your own cards, good chance you'll use
+            <b>subs2srs</b>
+            decks for anime. If that's the case, some cards are not that great because the progress is automatic. The
+            screenshots don`t help, the audio is missing at the beginning or the end of the sentences...
+          </p>
+          <p>
+            So when doing reviews, simply press <kbd>L</kbd>. It will show you all the others cards that have the same
+            Morph. Use the preview button to check them out.
+          </p>
+          <p>
+            If you find a better card that the one Morphman gave you, select it, you can use Edit - Learn now
+            <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> or <i>Cards - Reposition</i>, and press <i>Ok</i>. I use the
+            latter since there is a shortcut in the header.
+          </p>
+          <img src="assets/morphman/morphman22.jpg" loading="lazy" alt="" />
+        </section>
+
+        <section id="update-database">
+          <h3>Update your database</h3>
+          <p>
+            Morphman doesn't update your database of known words automatically. You need to do it manually. Press
+            <kbd>Ctrl</kbd> + <kbd>M</kbd> to do so.
+          </p>
+          <p>
+            Maybe not very useful to do it every time you`ve learned a new card, but I do it at the end of my reviews.
+          </p>
+          <p>
+            So do your new cards for the day, recalc the database. In the header of the main screen you'll see the K and
+            V numbers change.
+          </p>
+          <p>
+            Why two numbers ? It's because of iterations of the same word. So ね and ねぇ are the same word but written
+            a bit differently. Think of "hey" and "heyyy".
+          </p>
+          <p>If that was the only know word your numbers would be this; K 1 (ね) and V 2 (ね and ねぇ).</p>
+          <p>
+            Overall the way of counting words is not perfect, so don't stress about it too much. When updating Mecab for
+            example, your numbers may be lowered, but it doesn't mean that you`ve lost knowledge, it just means there's
+            better accuracy.
+          </p>
+          <img src="assets/morphman/morphman23.jpg" loading="lazy" alt="" />
+        </section>
+      </div>
+
+      <!-- Right sidebar section -->
+
+      <nav class="sidebar table-of-contents">
+        <div class="sidebar-container">
+          <h2>Table of contents</h2>
+          <a href="#introduction">Introduction</a>
+          <a href="#get-the-files">Get the neccesary files</a>
+          <a href="#what-morphman-needs">What morphman needs</a>
+          <a class="sub-item" href="#which-note-type">Which note type?</a>
+          <a class="sub-item" href="#which-field-to-analyze">Which field to analyze?</a>
+          <a href="#configure-morphman">Configure Morphman</a>
+          <a class="sub-item" href="#note-filter">Note Filter</a>
+          <a class="sub-item" href="#extra-fields">Extra Fields</a>
+          <a class="sub-item" href="#tags">Tags</a>
+          <a class="sub-item" href="#general">General</a>
+          <a href="#morphman-for-reviews">Morphman for reviews</a>
+          <a class="sub-item" href="#right-settings">Pick the right settings</a>
+          <a class="sub-item" href="#right-card">Pick the right card</a>
+          <a class="sub-item" href="#update-database">Update your database</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer" id="footer">
+      <p></p>
+      <p class="discord-link">Join <a href="https://discord.com/invite/J9Sw8jdkPY">Discord</a></p>
+      <p class="made-by-link">Website made by <a href="https://github.com/B0und">Unbound</a></p>
+    </footer>
+
+    <script src="js/highlight_active_page.js"></script>
+    <script src="js/toc_script.js"></script>
+    <script src="js/toggle_navbar.js"></script>
+  </body>
+</html>

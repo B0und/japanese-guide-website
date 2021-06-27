@@ -24,6 +24,7 @@ span.note {
 
   max-width: 75ch;
   margin: 2.25rem 4rem;
+  margin-bottom: 10rem;
 
   img {
     display: block;
@@ -103,5 +104,13 @@ span.note {
     margin-bottom: 0.75rem;
     color: $ligther-text-clr;
     font-weight: 600;
+  }
+
+  ul ul,
+  ol ol {
+    margin-left: 1.5rem;
+  }
+  ol {
+    margin-left: 1.5rem;
   }
 }

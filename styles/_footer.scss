@@ -1,0 +1,39 @@
+.footer {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  height: 75px;
+
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: rgb(37, 38, 43);
+  color: var(--footer-text-clr);
+  text-align: left;
+  font-size: 1rem;
+  color: $text-clr;
+  font-family: $text-ff;
+
+  .discord-link {
+    color: $ligther-text-clr;
+    font-size: 1.3rem;
+
+    a {
+      color: $blue-highlight;
+    }
+  }
+
+  .made-by-link {
+    color: $text-clr;
+    font-size: 0.9rem;
+
+    a {
+      color: $link-clr;
+    }
+  }
+}

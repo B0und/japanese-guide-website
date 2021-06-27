@@ -13,8 +13,6 @@ body {
   top: 0;
   background-color: inherit;
   font-family: $headings-ff;
-
-  // white-space: nowrap;
 }
 
 .sidebar-container {
@@ -43,6 +41,7 @@ body {
     text-decoration: none;
     color: $sidebar-text;
     font-weight: 400;
+    padding-left: 0.5rem;
 
     &:hover,
     :active {
@@ -53,6 +52,13 @@ body {
   .active {
     font-weight: 500;
     color: $blue-highlight;
+  }
+
+  .active-page {
+    font-weight: 600;
+    color: $blue-highlight;
+    border-left: 2px solid $blue-highlight;
+    // margin-left: 0.5rem;
   }
 }
 
