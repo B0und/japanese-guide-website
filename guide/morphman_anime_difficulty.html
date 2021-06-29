@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jo-Mako Website</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar" id="navbar">
+      <a href="/" class="navbar__logo">Jo-Mako`s Japanese Guide</a>
+      <button class="navbar__hamburger" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="navbar__menu">
+        <a href="../index.html" class="navbar__menu--links">Home</a>
+        <a href="introduction.html" class="navbar__menu--links">Guide</a>
+        <a href="../resources.html" class="navbar__menu--links">Resources</a>
+        <a href="../updates/progress4.html" class="navbar__menu--links">Updates</a>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <!-- Left sidebar section -->
+      <nav class="sidebar">
+        <div class="sidebar-container">
+          <h2>Guide</h2>
+          <a class="sidebar-container__links" href="introduction.html">Introduction</a>
+          <a class="sidebar-container__links" href="kana.html">Kana</a>
+          <a class="sidebar-container__links" href="kanji.html">Kanji</a>
+          <a class="sidebar-container__links" href="anki.html">Anki</a>
+          <a class="sidebar-container__links sub-item" href="anki-in-depth.html">Anki In-Depth</a>
+          <a class="sidebar-container__links sub-item" href="anki-addons.html">Anki Addons</a>
+          <a class="sidebar-container__links" href="grammar.html">Grammar</a>
+          <a class="sidebar-container__links" href="vocabulary.html">Vocabulary</a>
+          <a class="sidebar-container__links" href="morphman.html">Morphman</a>
+          <a class="sidebar-container__links sub-item" href="morphman-study.html">Study with Morphman</a>
+          <a class="sidebar-container__links sub-item" href="morphman_anime_difficulty.html">Anime Difficulty</a>
+          <a class="sidebar-container__links sub-item" href="morphman_readability.html">Readability List</a>
+          <a class="sidebar-container__links" href="immersion.html">Immersion</a>
+        </div>
+      </nav>
+
+      <div class="page-content">
+        <section id="introduction">
+          <h1>Anime Difficulty</h1>
+          <h2>Introduction</h2>
+          <p>
+            The main idea for the readability list was to create files that would make it easy to spot the next anime
+            (or manga, games...) that has the closest vocabulary from what you already know, making the transition to a
+            new title easier. Using Morphman, I was able to create benchmarks for popular resources. On that list, if
+            you're looking for a show to watch, you can simply use the Readability List tab on my spreadhseet. Titles
+            recommended for beginners are in bold. Howewer these suggestions, are only based on usual recommendations
+            and are subjective. If think they're still valid, because no amount of data can simply put one objective
+            difficulty grade for a show. So I think it's still the best way to go, but I would point out that you should
+            watch something you enjoy regardless of difficulty. But if you have interest in data like me, I'll go over
+            the numbers that we can use to measure the difficulty of a show.
+          </p>
+        </section>
+        <section id="issues">
+          <h2>Issues</h2>
+          <h3>Different times, different results</h3>
+          <p>
+            Ideally, you could simply put a grade to each between 1 and 10 based on the data, and call it a day.
+            Unfortunately it just doesn't work.
+          </p>
+          <p>
+            The main problem is that each shows have different runtimes. More time means more sentences, which means
+            more words. Problem is, it has a huge impact on the data you collect because of how languages work. Think
+            about the first 20 minutes of a show, a lot of new words will show up. Now add another 20 minutes, you'll
+            have more new words, but less than during the first 20 minutes, because you'll reuse some of them.
+          </p>
+          <p>
+            Point is you can't simply divide the number of new words by 2 to get an average, because it's not
+            proportional.
+          </p>
+        </section>
+        <section id="target">
+          <h2>Target%</h2>
+          <p>
+            Using Morphman, we can analyze how many words we need to know to achieve x% of comprehension of a show. In
+            this case, comprehension is achieved by knowing the vocabulary used in the show. So Target=85% means that
+            you want to know 85% of the Total Instances (TI). Those words are of course organized by the frequency of
+            that show.
+          </p>
+        </section>
+        <section id="other-factors">
+          <h2>Other factors</h2>
+          <h3>New data</h3>
+        </section>
+        <section id="conclusion">
+          <h2>Conclusion</h2>
+        </section>
+      </div>
+
+      <!-- Right sidebar section -->
+
+      <nav class="sidebar table-of-contents">
+        <div class="sidebar-container">
+          <h2>Table of contents</h2>
+          <a href="#introduction">Introduction</a>
+          <a href="#issues">Issues</a>
+          <a href="#target">Target %</a>
+          <a href="#conclusion">Conclusion</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer" id="footer">
+      <p></p>
+      <p class="discord-link">Join <a href="https://discord.com/invite/J9Sw8jdkPY">Discord</a></p>
+      <p class="made-by-link">Website made by <a href="https://github.com/B0und">Unbound</a></p>
+    </footer>
+
+    <script src="../js/highlight_active_page.js"></script>
+    <script src="../js/toc_script.js"></script>
+    <script src="../js/toggle_navbar.js"></script>
+  </body>
+</html>

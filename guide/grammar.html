@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jo-Mako Website</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar" id="navbar">
+      <a href="/" class="navbar__logo">Jo-Mako`s Japanese Guide</a>
+      <button class="navbar__hamburger" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="navbar__menu">
+        <a href="../index.html" class="navbar__menu--links">Home</a>
+        <a href="introduction.html" class="navbar__menu--links">Guide</a>
+        <a href="../resources.html" class="navbar__menu--links">Resources</a>
+        <a href="../updates/progress4.html" class="navbar__menu--links">Updates</a>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <!-- Left sidebar section -->
+      <nav class="sidebar">
+        <div class="sidebar-container">
+          <h2>Guide</h2>
+          <a class="sidebar-container__links" href="introduction.html">Introduction</a>
+          <a class="sidebar-container__links" href="kana.html">Kana</a>
+          <a class="sidebar-container__links" href="kanji.html">Kanji</a>
+          <a class="sidebar-container__links" href="anki.html">Anki</a>
+          <a class="sidebar-container__links sub-item" href="anki-in-depth.html">Anki In-Depth</a>
+          <a class="sidebar-container__links sub-item" href="anki-addons.html">Anki Addons</a>
+          <a class="sidebar-container__links" href="grammar.html">Grammar</a>
+          <a class="sidebar-container__links" href="vocabulary.html">Vocabulary</a>
+          <a class="sidebar-container__links" href="morphman.html">Morphman</a>
+          <a class="sidebar-container__links sub-item" href="morphman-study.html">Study with Morphman</a>
+          <a class="sidebar-container__links sub-item" href="morphman_anime_difficulty.html">Anime Difficulty</a>
+          <a class="sidebar-container__links sub-item" href="morphman_readability.html">Readability List</a>
+          <a class="sidebar-container__links" href="immersion.html">Immersion</a>
+        </div>
+      </nav>
+
+      <div class="page-content">
+        <section id="preparation">
+          <h1>Grammar</h1>
+          <h2>Preparation</h2>
+          <p>
+            Because it's best to learn vocabulary in the context of a sentence, you'll need some basic grammar first. As
+            I said in the introduction, I recommend not necesseraly learning but at least reading grammar lessons to get
+            used to some concepts like particles and the different conjugations. It's easier to learn something specific
+            if you're aware of something more general. I say get familiar with all the concepts by reading the content
+            column. Then go back and actually study.
+          </p>
+        </section>
+        <section id="which-method">
+          <h2>Which Method?</h2>
+          <section id="textbook"></section>
+          <h2>I want to study with a textbook</h2>
+          <h3>I want the best or most popular one</h3>
+          <p>
+            The most popular textbook is <a href="https://genki.japantimes.co.jp/index_en" target="_blank">Genki</a>.
+            Althought not perfect, it's probably the most solid. It will get you where you need to go. You can find a
+            lot of ressources for studying, since it's the most popular.
+          </p>
+
+          <h3>I want something slow and easy</h3>
+          <p>
+            Japanese from zero is designed for young students or casual learners with a slow pace. If you thought Genki
+            was too hard, you should try this one. You can also check out the youtube channel.
+          </p>
+
+          <section id="free-guide"></section>
+          <h2>I want to study with a free guide</h2>
+          <h3>NHK Easy Japanese</h3>
+          <p>text</p>
+
+          <h3>I need somehting more consistent</h3>
+          <p>text</p>
+
+          <h3>What about this tae kim guide?</h3>
+          <p>text</p>
+
+          <section id="looking-up"></section>
+          <h2>I want to study by looking up specific points</h2>
+          <h3>A dictionary of ...</h3>
+          <p>
+            Basic, Intermediate, Advanced japanese grammar is the absolute reference. No need for a second choice.
+            Online database here.
+          </p>
+          <h3>A database</h3>
+          <p>
+            Use Bunpro. You can look up any grammar point for free. You can also suscribe (with a fee) and practice
+            grammar with a built-in srs.
+          </p>
+          <h3>Good old google search</h3>
+          <p>text</p>
+
+          <section id="commute"></section>
+          <h2>I commute a lot. Any apps?</h2>
+          <h3>Anki</h3>
+          <p>text</p>
+          <h3>Lingodeer</h3>
+          <p>text</p>
+          <h3>Bunpo</h3>
+        </section>
+      </div>
+
+      <!-- Right sidebar section -->
+
+      <nav class="sidebar table-of-contents">
+        <div class="sidebar-container">
+          <h2>Table of contents</h2>
+          <a href="#preparation">Preparation</a>
+          <a href="#which-method">Which Method?</a>
+          <a href="#textbook" class="sub-item">I want to study with a textbook</a>
+          <a href="#free-guide" class="sub-item">I want to study with a free guide</a>
+          <a href="#looking-up" class="sub-item">I want to study by doing research</a>
+          <a href="#commute" class="sub-item">I commute a lot. Any apps?</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer" id="footer">
+      <p></p>
+      <p class="discord-link">Join <a href="https://discord.com/invite/J9Sw8jdkPY">Discord</a></p>
+      <p class="made-by-link">Website made by <a href="https://github.com/B0und">Unbound</a></p>
+    </footer>
+
+    <script src="../js/highlight_active_page.js"></script>
+    <script src="../js/toc_script.js"></script>
+    <script src="../js/toggle_navbar.js"></script>
+  </body>
+</html>

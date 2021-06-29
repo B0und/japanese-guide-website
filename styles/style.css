@@ -428,7 +428,7 @@ button {
   color: #cacaca;
 }
 
-.hero-wrapper .btn-container {
+.btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,7 +438,7 @@ button {
   gap: clamp(1rem, 4vw, 3rem);
 }
 
-.hero-wrapper .btn {
+.btn {
   padding: 1.5rem 3rem;
   border-radius: 10px;
   font-size: clamp(1rem, 3vw, 1.2rem);
@@ -452,27 +452,27 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .hero-wrapper .btn {
+  .btn {
     padding: 1.25rem 1.5rem;
   }
 }
 
-.hero-wrapper .btn-secondary {
+.btn-secondary {
   background-color: #3b3b3b;
   color: #cfcfcf;
 }
 
-.hero-wrapper .btn-secondary:hover {
+.btn-secondary:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
 }
 
-.hero-wrapper .btn-primary {
+.btn-primary {
   background-color: #90cefde0;
   color: #292929;
 }
 
-.hero-wrapper .btn-primary:hover {
+.btn-primary:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
 }
@@ -788,9 +788,9 @@ html {
   margin-bottom: 0.5rem;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
-  border-bottom: 2px solid #13a7ff;
+  border-bottom: 1px solid #13a7ff;
   color: #13a7ff;
 }
 
@@ -800,5 +800,130 @@ html {
           justify-content: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+}
+
+.card-container {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (MINMAX(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, MINMAX(250px, 1fr));
+  gap: 2rem;
+}
+
+.page-content .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-content .card img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 1rem;
+  height: 250px;
+  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.page-content .card p {
+  font-size: 1rem;
+}
+
+.buy {
+  padding: 1rem 1.5rem;
+}
+
+.sales-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #3b3b3b;
+  border-radius: 35px;
+  margin: 2rem 0;
+}
+
+.sales-item-container img {
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 30%;
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sales-item-container .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.sales-item-container .card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #5e5e5e;
+  border-top-right-radius: 35px;
+  padding: 1rem 2rem;
+}
+
+.sales-item-container .card-text .card-title {
+  font-size: 1.25rem;
+  color: #eeeeee;
+  line-height: 1.2;
+}
+
+.sales-item-container .inner-container {
+  padding: 1rem 2rem;
+}
+
+.sales-item-container .sales-btn {
+  width: 100%;
+  background-color: inherit;
+  border: 2px solid #13a7ff;
+  color: #eeeeee;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.sales-item-container .sales-btn:hover, .sales-item-container .sales-btn:active {
+  background-color: #13a7ff;
+  color: #1a1a1a;
+}
+
+.price {
+  font-size: 2.25rem;
+  color: #13a7ff;
 }
 /*# sourceMappingURL=style.css.map */
